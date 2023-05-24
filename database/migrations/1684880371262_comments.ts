@@ -8,6 +8,7 @@ export default class extends BaseSchema {
       table.increments('id')
       table.string('username')
       table.string('text')
+      table.integer('rate')
 
       table.integer('moment_id').unsigned().references('moments.id').onDelete('CASCADE')
 

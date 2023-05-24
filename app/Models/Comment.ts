@@ -14,6 +14,9 @@ export default class Comment extends BaseModel {
   @column()
   public momentId: number
 
+  @column()
+  public rate: number
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 
